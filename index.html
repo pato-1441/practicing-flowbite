@@ -2,71 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create Tailwind</title>
+    <title>patricio albornoz.</title>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
     <link rel="stylesheet" href="/style.css" />
   </head>
 
-  <body
-    class="h-screen bg-gradient-to-b from-gray-900 to-slate-800 flex flex-col text-white"
-  >
-    <header class="py-16">
-      <h1 class="text-4xl font-bold text-center mb-6">Create Tailwind</h1>
-      <div class="flex flex-row justify-center items-center gap-4">
-        <a
-          class="github-button"
-          href="https://github.com/andrejjurkin/create-tailwind-app"
-          data-color-scheme="no-preference: dark; light: dark; dark: dark;"
-          data-icon="octicon-star"
-          data-size="large"
-          data-show-count="true"
-          aria-label="Star andrejjurkin/create-tailwind-app on GitHub"
-          >Star</a
-        >
-        <a
-          class="github-button"
-          href="https://github.com/andrejjurkin/create-tailwind-app/discussions"
-          data-color-scheme="no-preference: dark; light: dark; dark: dark;"
-          data-icon="octicon-comment-discussion"
-          data-size="large"
-          aria-label="Discuss andrejjurkin/create-tailwind-app on GitHub"
-          >Discuss</a
-        >
-      </div>
+  <body class="h-screen bg-gradient-to-b from-black to-gray-900 flex flex-col text-white">
+    <header class="py-16">      
+      <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-black fixed w-full z-20 top-0 left-0">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="index.html" class="flex items-center">
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">patricio albornoz.</span>
+        </a>
+        <div class="flex md:order-2">
+            <button type="button" class="text-white dark:text-black bg-black hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-white dark:hover:bg-gray-200 dark:focus:ring-gray-600">Contact me</button>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+          </button>
+        </div>
+        <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-black md:dark:bg-black dark:border-inherit">
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projects</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
     </header>
 
     <main class="flex-1">
       <section class="text-center">
-        <div class="w-full grid place-items-center p-12">
-          <a href="https://vitejs.dev/">
-            <img src="/vite.svg" alt="Vite" class="h-24" />
-          </a>
-        </div>
-        <h2 class="text-3xl font-bold text-center">Created With Vite</h2>
-        <p class="mb-6">The Next Generation Frontend Tooling</p>
-        <ul
-          class="flex flex-row items-center w-full gap-8 justify-center text-blue-300 font-medium"
-        >
-          <li>
-            <a href="https://vitejs.dev/">Learn More</a>
-          </li>
-          <li>
-            <a href="https://vitejs.dev/guide/why.html">Why Vite?</a>
-          </li>
-        </ul>
+        
       </section>
     </main>
 
-    <footer class="px-8 py-12 border-t border-gray-800">
-      <div class="px-8 font-medium text-center">
-        <a href="https://github.com/andrejjurkin/create-tailwind-app">
-          Create Tailwind
-        </a>
-      </div>
-    </footer>
+    
+
     <script type="module" src="/main.js"></script>
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!--Script flowbite-->
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   </body>
 </html>
